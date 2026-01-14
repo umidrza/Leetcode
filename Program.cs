@@ -1,7 +1,7 @@
-﻿using Leetcode.Stack;
+﻿using Leetcode.MonotonicStack;
 
-var solution = new ExclusiveTimeOfFunctions();
+var solution = new LargestRectangleInHistogram();
 
-var res = solution.ExclusiveTime(2, ["0:start:0", "1:start:2", "1:end:5", "0:end:6"]);
+var res = solution.LargestRectangleArea([2, 1, 5, 1, 1, 1]);
 Console.WriteLine(string.Join(" ", res));
 
