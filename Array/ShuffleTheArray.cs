@@ -1,5 +1,6 @@
 ﻿namespace Leetcode.Array;
 
+//https://leetcode.com/problems/shuffle-the-array/
 public class ShuffleTheArray
 {
     public int[] Shuffle(int[] nums, int n)

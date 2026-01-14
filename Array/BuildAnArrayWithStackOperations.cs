@@ -1,5 +1,6 @@
 ﻿namespace Leetcode.Array;
 
+//https://leetcode.com/problems/build-an-array-with-stack-operations
 public class BuildAnArrayWithStackOperations
 {
     public IList<string> BuildArray(int[] target, int n)

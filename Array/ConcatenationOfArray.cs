@@ -1,5 +1,6 @@
 ﻿namespace Leetcode.Array;
 
+//https://leetcode.com/problems/concatenation-of-array/
 public class ConcatenationOfArray
 {
     public int[] GetConcatenation(int[] nums)

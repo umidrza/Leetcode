@@ -1,5 +1,6 @@
 ﻿namespace Leetcode.Array;
 
+//https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array
 public class FindAllNumbersDisappearedInAnArray
 {
     public IList<int> FindDisappearedNumbers(int[] nums)

@@ -1,5 +1,6 @@
 ﻿namespace Leetcode.MonotonicStack;
 
+//https://leetcode.com/problems/largest-rectangle-in-histogram
 public class LargestRectangleInHistogram
 {
     public int LargestRectangleArea(int[] heights)

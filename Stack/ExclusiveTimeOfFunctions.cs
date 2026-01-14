@@ -1,5 +1,6 @@
 ﻿namespace Leetcode.Stack;
 
+//https://leetcode.com/problems/exclusive-time-of-functions
 public class ExclusiveTimeOfFunctions
 {
     public int[] ExclusiveTime(int n, IList<string> logs)

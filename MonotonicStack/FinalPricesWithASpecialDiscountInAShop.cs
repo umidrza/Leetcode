@@ -1,5 +1,6 @@
 ﻿namespace Leetcode.MonotonicStack;
 
+//https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop
 public class FinalPricesWithASpecialDiscountInAShop
 {
     public int[] FinalPrices(int[] prices)
