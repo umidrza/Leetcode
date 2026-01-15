@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Array;
+﻿namespace Leetcode.Stack;
 
 //https://leetcode.com/problems/build-an-array-with-stack-operations
 public class BuildAnArrayWithStackOperations
