@@ -1,7 +1,7 @@
-﻿using Leetcode.MonotonicStack;
+﻿using Leetcode.Queue;
 
-var solution = new LargestRectangleInHistogram();
+var solution = new NumberOfStudentsUnableToEatLunch();
 
-var res = solution.LargestRectangleArea([2, 1, 5, 1, 1, 1]);
+var res = solution.CountStudents([1, 1, 1, 0, 0, 1], [1, 0, 0, 0, 1, 1]);
 Console.WriteLine(string.Join(" ", res));
 
