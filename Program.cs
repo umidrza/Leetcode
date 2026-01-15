@@ -1,7 +1,7 @@
-﻿using Leetcode.Queue;
+﻿using Leetcode.Heap;
 
-var solution = new NumberOfStudentsUnableToEatLunch();
+var solution = new LastStoneWeightSolution();
 
-var res = solution.CountStudents([1, 1, 1, 0, 0, 1], [1, 0, 0, 0, 1, 1]);
+var res = solution.LastStoneWeight([2, 7, 4, 1, 8, 1]);
 Console.WriteLine(string.Join(" ", res));
 
