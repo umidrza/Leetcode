@@ -1,7 +1,7 @@
 ﻿using Leetcode.Heap;
 
-var solution = new LastStoneWeightSolution();
+var solution = new ConstructTargetArrayWithMultipleSums();
 
-var res = solution.LastStoneWeight([2, 7, 4, 1, 8, 1]);
+var res = solution.IsPossible([8, 5]);
 Console.WriteLine(string.Join(" ", res));
 
