@@ -1,7 +1,8 @@
 ﻿using Leetcode.Heap;
+using Leetcode.String;
 
-var solution = new ConstructTargetArrayWithMultipleSums();
+var solution = new DetectCapital();
 
-var res = solution.IsPossible([8, 5]);
+var res = solution.DetectCapitalUse("USA");
 Console.WriteLine(string.Join(" ", res));
 
