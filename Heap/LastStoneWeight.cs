@@ -5,32 +5,57 @@ public class LastStoneWeightSolution
 {
     public int LastStoneWeight(int[] stones)
     {
-        int n = stones.Length;
-        var heap = new List<int>(stones);
-        BuildHeap(heap);
+        var pq = new MyPriorityQueue(stones);
 
-        while (heap.Count > 1)
+        while (pq.Count > 1)
         {
-            int first = ExtractMax(heap);
-            int second = ExtractMax(heap);
+            int first = pq.Dequeue();
+            int second = pq.Dequeue();
 
             if (first != second)
-                Insert(heap, first - second);
+                pq.Enqueue(first - second);
         }
 
-        return heap.Count == 1 ? heap[0] : 0;
+        return pq.Count > 0 ? pq.Dequeue() : 0;
+    }
+}
+
+class MyPriorityQueue 
+{
+    private readonly List<int> list;
+    public int Count => list.Count;
+    public MyPriorityQueue(IEnumerable<int> list)
+    {
+        this.list = [.. list];
+        BuildHeap();
     }
 
-    private void BuildHeap(List<int> heap)
+    public int Dequeue()
     {
-        int n = heap.Count;
+        int max = list[0];
+        list[0] = list[^1];
+        list.RemoveAt(list.Count - 1);
+
+        HeapifyDown(list.Count, 0);
+        return max;
+    }
+
+    public void Enqueue(int value)
+    {
+        list.Add(value);
+        HeapifyUp(list.Count - 1);
+    }
+
+    private void BuildHeap()
+    {
+        int n = list.Count;
         for (int i = n / 2 - 1; i >= 0; i--)
         {
-            HeapifyDown(heap, n, i);
+            HeapifyDown(n, i);
         }
     }
 
-    private void HeapifyDown(List<int> list, int n, int root)
+    private void HeapifyDown(int n, int root)
     {
         int largest = root;
         int left = 2 * root + 1;
@@ -43,12 +68,12 @@ public class LastStoneWeightSolution
 
         if (largest != root)
         {
-            Swap(list, root, largest);
-            HeapifyDown(list, n, largest);
+            Swap(root, largest);
+            HeapifyDown(n, largest);
         }
     }
 
-    private void HeapifyUp(List<int> list, int index)
+    private void HeapifyUp(int index)
     {
         while (index > 0)
         {
@@ -57,31 +82,12 @@ public class LastStoneWeightSolution
             if (list[index] <= list[parent])
                 break;
 
-            Swap(list, index, parent);
+            Swap(index, parent);
             index = parent;
         }
     }
 
-    private int ExtractMax(List<int> list)
-    {
-        if (list.Count == 0) return 0;
-
-        int max = list[0];
-        list[0] = list[^1];
-        list.RemoveAt(list.Count - 1);
-
-        HeapifyDown(list, list.Count, 0);
-        return max;
-    }
-
-    public void Insert(List<int> list, int value)
-    {
-        list.Add(value);
-        HeapifyUp(list, list.Count - 1);
-    }
-
-
-    private void Swap(List<int> list, int i, int j)
+    private void Swap(int i, int j)
     {
         int temp = list[i];
         list[i] = list[j];
