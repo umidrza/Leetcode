@@ -1,7 +1,6 @@
-﻿using Leetcode.src.Definitions;
-using Leetcode.src.Solutions.LinkedList;
+﻿using Leetcode.src.Solutions.PrefixSum;
 
-var solution = new ReverseLinkedList();
+var solution = new MakeSumDivisibleByP();
 
-var res = solution.ReverseList(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))));
+var res = solution.MinSubarray([3, 1, 4, 2], 6);
 Console.WriteLine(string.Join(" ", res));
