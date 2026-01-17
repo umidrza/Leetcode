@@ -1,4 +1,5 @@
-﻿using Leetcode.LinkedList;
+﻿using Leetcode.src.Definitions;
+using Leetcode.src.Solutions.LinkedList;
 
 var solution = new ReverseLinkedList();
 
