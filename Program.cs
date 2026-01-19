@@ -1,7 +1,6 @@
-﻿using Leetcode.src.Definitions;
-using Leetcode.src.Solutions.Sorting;
+﻿using Leetcode.src.Solutions.BinarySearch;
 
-var solution = new InsertionSortListSolution();
+var solution = new SumOfSquareNumbers();
 
-var res = solution.InsertionSortList(new ListNode(4, new ListNode(2, new ListNode(1, new ListNode(3)))));
+var res = solution.JudgeSquareSum(2147483600);
 Console.WriteLine(string.Join(" ", res));
