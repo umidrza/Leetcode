@@ -1,7 +1,6 @@
-﻿using Leetcode.src.Definitions;
-using Leetcode.src.Solutions.Sorting;
+﻿using Leetcode.src.Solutions.TwoPointers;
 
-var solution = new MergeKSortedLists();
+var solution = new MagicalStringSolution();
 
-var res = solution.MergeKLists([new ListNode(1, new ListNode(4, new ListNode(5))), new ListNode(1, new ListNode(3, new ListNode(4))), new ListNode(2, new ListNode(6))]);
+var res = solution.MagicalString(10);
 Console.WriteLine(string.Join(" ", res));
