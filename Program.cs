@@ -1,7 +1,7 @@
-﻿using Leetcode.src.Solutions.BinarySearch;
-using Leetcode.src.Solutions.DivideAndConquer;
+﻿using Leetcode.src.Definitions;
+using Leetcode.src.Solutions.Sorting;
 
-var solution = new ConstructBinaryTreeFromInorderAndPostorderTraversal();
+var solution = new MergeKSortedLists();
 
-var res = solution.BuildTree([9, 3, 15, 20, 7], [9, 15, 7, 20, 3]);
+var res = solution.MergeKLists([new ListNode(1, new ListNode(4, new ListNode(5))), new ListNode(1, new ListNode(3, new ListNode(4))), new ListNode(2, new ListNode(6))]);
 Console.WriteLine(string.Join(" ", res));
