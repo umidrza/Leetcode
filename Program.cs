@@ -1,6 +1,6 @@
-﻿using Leetcode.src.Solutions.TwoPointers;
+﻿using Leetcode.src.Solutions.RollingHash;
 
-var solution = new MagicalStringSolution();
+var solution = new SumOfScoresOfBuiltStrings();
 
-var res = solution.MagicalString(10);
+var res = solution.SumScores("babab");
 Console.WriteLine(string.Join(" ", res));
