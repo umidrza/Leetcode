@@ -12,12 +12,4 @@ public class Node
         next = null;
         random = null;
     }
-
-    public override string ToString()
-    {
-        string nextNode = next?.ToString() ?? "null";
-        string randomVal = random?.val.ToString() ?? "null";
-
-        return $"value: {val.ToString()}, random value: {randomVal} -> {nextNode}";
-    }
 }

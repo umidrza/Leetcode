@@ -11,12 +11,4 @@ public class TreeNode
         this.left = left;
         this.right = right;
     }
-
-    public override string ToString()
-    {
-        string leftVal = left?.val.ToString() ?? "null";
-        string rightVal = right?.val.ToString() ?? "null";
-
-        return $"value: {val}, left: {leftVal}, right: {rightVal}";
-    }
 }
