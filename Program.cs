@@ -1,7 +1,6 @@
-﻿
-using Leetcode.src.Solutions.SlidingWindow;
+﻿using Leetcode.src.Solutions.Backtracking;
 
-var solution = new NumberOfSubArraysOfSizeKAndAverageGreaterThanOrEqualToThreshold();
+var solution = new AllPathsFromSourceToTarget();
 
-var res = solution.NumOfSubarrays([2, 2, 2, 2, 5, 5, 5, 8], 3, 4);
+var res = solution.AllPathsSourceTarget([[1, 2], [3], [3], []]);
 Console.WriteLine($"[{ string.Join(" ", res)}]");
