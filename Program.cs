@@ -1,7 +1,6 @@
-﻿using Leetcode.src.Solutions.Backtracking;
-using Leetcode.src.Solutions.UnionFind;
+﻿using Leetcode.src.Solutions.UnionFind;
 
-var solution = new ProcessRestrictedFriendRequests();
+var solution = new LargestComponentSizeByCommonFactor();
 
-var res = solution.FriendRequests(5, [[0, 1], [1, 2], [2, 3]], [[0, 4], [1, 2], [3, 1], [3, 4]]);
+var res = solution.LargestComponentSize([20, 50, 9, 63]);
 Console.WriteLine($"[{ string.Join(" ", res)}]");
