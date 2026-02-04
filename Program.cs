@@ -1,6 +1,6 @@
 ﻿using Leetcode.src.Solutions.Graph;
 
-var solution = new MaximumPathQualityOfAGraph();
+var solution = new AddEdgesToMakeDegreesOfAllNodesEven();
 
-var res = solution.MaximalPathQuality([0, 32, 10, 43], [[0, 1, 10], [1, 2, 15], [0, 3, 10]], 49);
+var res = solution.IsPossible(5, [[1, 2], [2, 3], [3, 4], [4, 2], [1, 4], [2, 5]]);
 Console.WriteLine($"[{ string.Join(" ", res)}]");
