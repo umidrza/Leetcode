@@ -1,6 +1,6 @@
-﻿using Leetcode.src.Solutions.Graph;
+﻿using Leetcode.src.Solutions.BFS;
 
-var solution = new AddEdgesToMakeDegreesOfAllNodesEven();
+var solution = new BusRoutes();
 
-var res = solution.IsPossible(5, [[1, 2], [2, 3], [3, 4], [4, 2], [1, 4], [2, 5]]);
+var res = solution.NumBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6);
 Console.WriteLine($"[{ string.Join(" ", res)}]");

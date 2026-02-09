@@ -21,7 +21,7 @@ public class ShortestPathWithAlternatingColors
             blueGraph[e[0]].Add(e[1]);
 
         int[] res = new int[n];
-        Array.Fill(res, -1);
+        System.Array.Fill(res, -1);
 
         var seen = new HashSet<(int node, bool color)>();
         var q = new Queue<(int node, bool color)>();
