@@ -1,6 +1,6 @@
-﻿using Leetcode.src.Solutions.BFS;
+﻿using Leetcode.src.Solutions.BitManipulation;
 
-var solution = new BusRoutes();
+var solution = new ReverseBitsSolution();
 
-var res = solution.NumBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6);
+var res = solution.ReverseBits(3);
 Console.WriteLine($"[{ string.Join(" ", res)}]");
