@@ -2,7 +2,7 @@
 
 namespace Leetcode.src.Solutions.BitManipulation;
 
-//
+// https://leetcode.com/problems/add-binary
 public class AddBinarySolution
 {
     public string AddBinary(string a, string b)
