@@ -1,6 +1,6 @@
 ﻿using Leetcode.src.Solutions.BitManipulation;
 
-var solution = new ReverseBitsSolution();
+var solution = new BinaryGapSolution();
 
-var res = solution.ReverseBits(3);
+var res = solution.BinaryGap(22);
 Console.WriteLine($"[{ string.Join(" ", res)}]");
