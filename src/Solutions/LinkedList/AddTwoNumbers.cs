@@ -2,10 +2,9 @@
 
 namespace Leetcode.src.Solutions.LinkedList;
 
-public class AddTwoNumbers
+// https://leetcode.com/problems/add-two-numbers/
+public class AddTwoNumbersSolution
 {
-    public class Solution
-    {
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2, int carry = 0)
         {
             if (l1 == null && l2 == null && carry == 0) return null;
@@ -14,5 +13,4 @@ public class AddTwoNumbers
             carry = total / 10;
             return new ListNode(total % 10, AddTwoNumbers(l1?.next, l2?.next, carry));
         }
-    }
 }
